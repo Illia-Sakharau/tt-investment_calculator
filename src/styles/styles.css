@@ -20,6 +20,15 @@
   width: 100%;
   background-color: #ffffff;
   border-radius: 16px;
-  padding: 16px;
+  padding: 24px;
   box-shadow: 0 0 16px 0 rgba(131, 146, 160, 0.5);
+}
+
+.inputs-bar_inner {
+  display: flex;
+  gap: 12px;
+}
+.inputs-bar_inner > * {
+  flex-grow: 1;
+  background-color: aqua;
 }

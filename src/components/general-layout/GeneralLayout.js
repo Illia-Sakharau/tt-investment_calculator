@@ -1,19 +1,19 @@
+import InputsBar from "../inputs-bar/InputsBar.js";
 import Surface from "../surface/Surface.js";
 
 export default class GeneralLayout {
     constructor() {
-      const surfaseInner1 = document.createElement('div');
+      const inputsBar = new InputsBar().draw();
+
       const surfaseInner2 = document.createElement('div');
-      surfaseInner1.innerText = 'Surface1';
       surfaseInner2.innerText = 'Surface2';
 
-      const surfase = new Surface(surfaseInner1).draw();
-      const surfase1 = new Surface(surfaseInner2).draw();
+      const surfase2 = new Surface(surfaseInner2).draw();
 
       this.component = document.createElement('div');
       this.component.classList.add('general-layout');
-      this.component.appendChild(surfase);
-      this.component.appendChild(surfase1);
+      this.component.appendChild(inputsBar);
+      this.component.appendChild(surfase2);
     }
   
     draw() {    
