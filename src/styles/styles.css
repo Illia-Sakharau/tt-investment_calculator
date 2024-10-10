@@ -62,3 +62,16 @@
 .inputs-bar_inner > * {
   width: 100%;
 }
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.section-header_title {
+  font-size: 28px;
+}
+.section-header_subtitle {
+  font-size: 15px;
+  color: #6E6E6F;
+}
