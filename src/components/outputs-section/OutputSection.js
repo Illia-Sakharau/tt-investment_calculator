@@ -1,4 +1,5 @@
 import Surface from "../surface/Surface.js";
+import OutputSectionContent from "./components/OutputSectionContent.js";
 import OutputSectionHeader from "./components/OutputSectionHeader.js";
 
 export default class OutputSection {
@@ -6,14 +7,12 @@ export default class OutputSection {
     this.inner = document.createElement('div');
     this.inner.classList.add('output-section_inner');
 
-    this.header = new OutputSectionHeader().draw();
-
-    const content = document.createElement('div');
-    content.innerText = 'Content';
+    const header = new OutputSectionHeader().draw();
+    const content = new OutputSectionContent().draw();
     const footer = document.createElement('div');
     footer.innerText = 'Footer';
 
-    this.inner.append(this.header, content, footer);
+    this.inner.append(header, content, footer);
     this.component = new Surface(this.inner).draw();
   }
 
