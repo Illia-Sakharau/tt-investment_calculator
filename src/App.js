@@ -1,4 +1,7 @@
 import GeneralLayout from "./components/general-layout/GeneralLayout.js";
+import Store from "./store/Store.js";
+
+export const store = new Store();
 
 export default class App {
   constructor() {

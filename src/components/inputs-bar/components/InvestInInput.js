@@ -1,7 +1,8 @@
 import DropdownField from "../../input-fields/DropdownField.js";
 import Input from "../../input/Input.js";
+import { store } from "../../../App.js";
 
-const dropdownOptions = [
+export const dropdownOptions = [
   {
     text: 'MSCI World 8.91%',
     value: 8.91,
@@ -20,9 +21,9 @@ export default class InvestInInput {
   constructor() {
     const inputFieldProps = {
       options: dropdownOptions,
-      defaultValue: localStorage.getItem('InvestInInput') || dropdownOptions[0].value,
+      defaultValue: store.getState().investPercentage,
       onChange: (value) => {
-        localStorage.setItem('InvestInInput', value)
+        store.setState({ investPercentage: value });
       },
     }
     const inputField = new DropdownField(inputFieldProps).draw();

@@ -1,15 +1,16 @@
+import { store } from "../../../App.js";
 import NumberField from "../../input-fields/NumberField.js";
 import Input from "../../input/Input.js";
 
 export default class InvestmentPeriodInput {
   constructor() {
     const inputFieldProps = {
-      defaultValue: localStorage.getItem('InvestmentPeriod') || 10,
+      defaultValue: store.getState().investmentPeriod,
       min: 1,
       max: 40,
       step: 1,
       onChange: (value) => {
-        localStorage.setItem('InvestmentPeriod', value)
+        store.setState({ investmentPeriod: value });
       },
     }
     const inputField = new NumberField(inputFieldProps).draw();
