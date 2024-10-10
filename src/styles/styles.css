@@ -20,7 +20,7 @@
   width: 100%;
   background-color: #ffffff;
   border-radius: 16px;
-  padding: 24px;
+  padding: 20px;
   box-shadow: 0 0 16px 0 rgba(131, 146, 160, 0.5);
 }
 
@@ -30,5 +30,25 @@
 }
 .inputs-bar_inner > * {
   flex-grow: 1;
-  background-color: aqua;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.input_label {
+  width: 100%;
+  font-size: 12px;
+  color: #6E6E6F;
+}
+.input_field {
+  height: 28px;
+  width: 100%;
+  padding: 4px 8px;
+  border-radius: 3px;
+  border: 1.25px solid #d1d1d1;
+  outline: none;
+  
+  font-size: 14px;
 }
