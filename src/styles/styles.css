@@ -53,3 +53,12 @@
   
   font-size: 14px;
 }
+
+.output-section_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.inputs-bar_inner > * {
+  width: 100%;
+}
