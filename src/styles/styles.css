@@ -1,0 +1,17 @@
+.app {  
+  width: 100vw;
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.general-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1200px;
+
+  margin: auto;
+}
