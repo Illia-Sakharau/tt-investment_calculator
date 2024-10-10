@@ -30,6 +30,7 @@
 }
 .inputs-bar_inner > * {
   flex-grow: 1;
+  width: calc(25% - 3*12px);
 }
 
 .input {
