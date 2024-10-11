@@ -114,3 +114,37 @@
   line-height: 22px;
   color: black;
 }
+
+.output-section_footer-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 16px;
+  min-width: 240px;
+}
+
+button {
+  padding: 16px 32px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button__primary {
+  color: #ffffff;
+  background-color: #4FBE0C;
+  font-size: 14px;
+  font-weight: 400;
+}
+.button__primary:hover {
+  background-color: #63D220;
+}
+.button__primary:active {
+  background-color: #3BAA00;
+}
+
+
+.text-with-link > .link {
+  color: inherit;
+}
