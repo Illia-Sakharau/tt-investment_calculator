@@ -82,6 +82,7 @@
 
 .chart {
   flex-grow: 1;
+  height: 360px;
 }
 
 .statistics-list {
@@ -147,4 +148,81 @@ button {
 
 .text-with-link > .link {
   color: inherit;
+}
+
+@media (max-width: 1168px) {
+  .chart {
+    height: 280px;
+  } 
+}
+
+@media (max-width: 960px) {
+  .output-section_content {
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+
+  .chart {
+    height: 360px;
+  }
+
+  .statistics-list {
+    flex-direction: row;
+    justify-content: end;
+    gap: 32px;
+  }
+
+  .output-section_footer {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .output-section_footer-bar {
+    align-items: start;
+  }
+}
+
+@media (max-width: 720px) {
+  .app {  
+    padding: 16px;
+  }
+
+  .inputs-bar_inner {
+    flex-wrap: wrap;
+  }
+  .inputs-bar_inner > * {
+    flex-grow: 1;
+    width: calc(50% - 12px);
+  }
+}
+
+@media (max-width: 480px) {
+  .app {  
+    padding: 8px;
+  }
+
+  .surface {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .inputs-bar_inner {
+    flex-direction: column;
+  }
+  .inputs-bar_inner > * {
+    width: 100%;
+  }
+
+  .statistics-list {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .chart {
+    height: 240px;
+  }
+
+  .output-section_footer-bar {
+    align-items: stretch; 
+  }
 }
