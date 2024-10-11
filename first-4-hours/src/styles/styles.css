@@ -1,0 +1,85 @@
+.app {  
+  width: 100vw;
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.general-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+.surface {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 16px 0 rgba(131, 146, 160, 0.5);
+}
+
+.inputs-bar_inner {
+  display: flex;
+  gap: 12px;
+}
+.inputs-bar_inner > * {
+  flex-grow: 1;
+  width: calc(25% - 3*12px);
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.input_label {
+  width: 100%;
+  font-size: 12px;
+  color: #6E6E6F;
+}
+.input_field {
+  height: 28px;
+  width: 100%;
+  padding: 4px 8px;
+  border-radius: 3px;
+  border: 1.25px solid #d1d1d1;
+  outline: none;
+  
+  font-size: 14px;
+}
+
+.output-section_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.inputs-bar_inner > * {
+  width: 100%;
+}
+.output-section_content {
+  display: flex;
+  gap: 48px;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.section-header_title {
+  font-size: 28px;
+}
+.section-header_subtitle {
+  font-size: 15px;
+  color: #6E6E6F;
+}
+
+.chart {
+  flex-grow: 1;
+}
