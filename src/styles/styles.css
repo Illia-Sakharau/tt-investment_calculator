@@ -104,3 +104,13 @@
 .statistic-item_text {
   font-size: 14px;
 }
+
+.output-section_footer {
+  display: flex;
+  gap: 32px;
+}
+.output-section_footer-text {
+  font-size: 14px;
+  line-height: 22px;
+  color: black;
+}
