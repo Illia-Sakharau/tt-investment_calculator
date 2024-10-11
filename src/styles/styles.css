@@ -57,7 +57,7 @@
 .output-section_inner {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 24px;
 }
 .inputs-bar_inner > * {
   width: 100%;
@@ -82,4 +82,25 @@
 
 .chart {
   flex-grow: 1;
+}
+
+.statistics-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  min-width: 240px;
+}
+
+.statistic-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.statistic-item_value {
+  font-size: 28px;
+  font-weight: 600;
+}
+.statistic-item_text {
+  font-size: 14px;
 }

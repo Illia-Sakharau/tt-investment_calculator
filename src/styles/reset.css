@@ -1,6 +1,5 @@
 *, *::before, *::after{
     box-sizing: border-box; 
-    color: #333;
     font-family: sans-serif;
 }
 
@@ -49,5 +48,6 @@ input, button, textarea, select{
 
 body, html{
     height: 100%; 
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
+    color: #333;
 }

@@ -1,4 +1,5 @@
 import BarChart from "../../chart/BarChart.js";
+import StatisticsList from "../../statistics/StatisticsList.js";
 
 export default class OutputSectionContent {
   constructor() {
@@ -6,8 +7,7 @@ export default class OutputSectionContent {
     this.component.classList.add('output-section_content');
 
     const chart = new BarChart().draw();
-    const statistics = document.createElement('div');
-    statistics.innerText = 'statistics';
+    const statistics = new StatisticsList().draw();
 
     this.component.append(chart, statistics);
   }

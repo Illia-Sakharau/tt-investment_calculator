@@ -19,7 +19,6 @@ export default class BarChart {
     const ctx = canvas.getContext('2d');
 
     this.component.append(canvas);
-    console.log(this.config);
     new Chart(ctx, this.config);
   }
 
